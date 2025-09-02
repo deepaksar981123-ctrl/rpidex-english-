@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="60 Days English Speaking Course with 6 Expeditions, Conversations, and Appendix" />
+  <title>Rapid English – 60 Days</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Home">Rapid<span>English</span></a>
+      <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false" data-nav-toggle>
+        <span class="sr-only">Menu</span>
+        ☰
+      </button>
+      <nav id="site-nav" class="site-nav" data-nav>
+        <a href="#home">Home</a>
+        <a href="#course">Course</a>
+        <a href="#conversations">Conversations</a>
+        <a href="#appendix">Appendix</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <h1>60 दिनों में इंग्लिश बोलना सीखें – <span class="accent">6 Expeditions</span> में</h1>
+        <p class="subtitle">रोज़ 1 Day. छोटे-छोटे Lesson, Drill Tables, Conversations और Practical Exercises।</p>
+        <div class="cta-group">
+          <a class="btn primary" href="#course" data-start>Start Day 1</a>
+          <a class="btn" href="#conversations">Conversations</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="course" class="section">
+      <div class="container">
+        <h2>Course (60 Days)</h2>
+        <div class="learning-layout">
+          <aside class="sidebar" id="sidebar" aria-label="Course Navigation">
+            <div class="sidebar-header">
+              <input type="search" id="search" placeholder="Search topics..." aria-label="Search topics" />
+              <div class="progress">
+                <div class="progress-bar" id="progress-bar" style="width:0%"></div>
+              </div>
+              <p class="progress-text"><span id="progress-count">0</span>/61 complete</p>
+            </div>
+            <nav id="day-list" class="day-list" aria-label="Days"></nav>
+          </aside>
+          <div class="lesson" id="lesson">
+            <article class="card">
+              <div class="card-body" id="lesson-content">
+                <h3>Day 1</h3>
+                <p>Pick a day from the left to begin.</p>
+              </div>
+              <div class="card-actions lesson-actions">
+                <button class="btn" id="prev-day" aria-label="Previous Day">◀ Prev</button>
+                <button class="btn primary" id="mark-complete" aria-label="Mark Complete">Mark Complete</button>
+                <button class="btn" id="next-day" aria-label="Next Day">Next ▶</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="conversations" class="section alt">
+      <div class="container">
+        <h2>हिन्दी–अंग्रेज़ी बोलचाल (Conversations)</h2>
+        <div class="grid" id="conversations-grid"></div>
+      </div>
+    </section>
+
+    <section id="appendix" class="section">
+      <div class="container">
+        <h2>परिशिष्ट (Appendix)</h2>
+        <ul id="appendix-list" class="list-inline"></ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <form id="contact-form" class="contact-form">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="आपका नाम" required />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="aap@domain.com" required />
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="आपका संदेश..." required></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn primary">Send</button>
+            <p class="form-hint">यह फ़ॉर्म आपके ईमेल क्लाइंट के माध्यम से भेजेगा।</p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Rapid English. सभी अधिकार सुरक्षित।</p>
+    </div>
+  </footer>
+
+  <script src="content.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
+
+
